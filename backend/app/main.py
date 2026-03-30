@@ -1,5 +1,3 @@
-# python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload-dir backend
-
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 

@@ -102,8 +102,16 @@ md id="hy7cah"
 - CORS는 현재 개발용으로 전체 허용(`*`) 상태이며, 배포 시 프론트 주소만 허용하도록 제한하는 것이 좋습니다.
 - 팀원 공유용으로는 ngrok 또는 정식 배포 URL을 사용할 수 있습니다.
 
-## Docker 실행 방법
+## 11. Docker 실행 방법
+도커 설치 후
 
 bash
-docker compose up --build -d
+git clone https://github.com/1604jw40/project_basic2.git
+cd project_basic2
 
+docker 실행
+docker compose down -v
+docker compose up --build
+
+접속 확인
+http://localhost:8000/docs
