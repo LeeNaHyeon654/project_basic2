@@ -1,7 +1,7 @@
 import os
 import requests
 
-MODEL_API_URL=http://model-api.railway.internal:8001
+MODEL_API_URL=http://project_basic2.railway.internal:8001
 
 def predict_customer(customer_data: dict) -> dict:
     response = requests.post(f"{MODEL_API_URL}/predict", json=customer_data)
